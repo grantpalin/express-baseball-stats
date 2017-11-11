@@ -31,7 +31,7 @@ block content
   +teamsTable("National League", nlTeams)
 
 mixin teamsTable(caption, teams)
-  table
+  table.teamsTable
     caption= caption
     thead
       tr
@@ -45,7 +45,7 @@ mixin teamsTable(caption, teams)
     tbody
     -for(var team in teams)
       tr
-        td= teams[team].name
+        th(scope="row")= teams[team].name
         td= teams[team].win
         td= teams[team].lose
         td= teams[team].winHome

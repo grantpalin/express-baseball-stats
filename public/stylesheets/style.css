@@ -1,0 +1,46 @@
+body {
+	font-family: Verdana, sans-serif;
+	margin: 1em 10%;
+}
+
+.teamsTable {
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+
+.teamsTable + .teamsTable {
+	margin-top: 1em;
+}
+
+.teamsTable caption {
+	font-size: 1.0625rem;
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+
+.teamsTable thead th {
+	background-color: #ccc;
+	font-size: 0.75rem;
+	padding: 5px;
+	text-align: right;
+}
+
+.teamsTable tbody tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.teamsTable tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.teamsTable tbody tr:hover {
+	background-color: #ccc;
+}
+
+.teamsTable tbody td,
+.teamsTable tbody th {
+	font-size: 0.875rem;
+	font-weight: normal;
+	padding: 5px;
+	text-align: right;
+}
