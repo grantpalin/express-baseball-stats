@@ -4,12 +4,14 @@ block content
   h1= title
   p Showing 2017 season standings.
 
-  -alTeams  = teamData.filter(function(team) { return team.league   === 'AL'; });
+  -sortTeams = function(teamA, teamB) { return teamB.win - teamA.win; }
+
+  -alTeams  = teamData.filter(function(team) { return team.league   === 'AL'; }).sort(sortTeams);
   -alETeams = alTeams.filter(function(team)  { return team.division === 'East'; });
   -alCTeams = alTeams.filter(function(team)  { return team.division === 'Central'; });
   -alWTeams = alTeams.filter(function(team)  { return team.division === 'West'; });
 
-  -nlTeams  = teamData.filter(function(team) { return team.league   === 'NL'; });
+  -nlTeams  = teamData.filter(function(team) { return team.league   === 'NL'; }).sort(sortTeams);
   -nlETeams = nlTeams.filter(function(team)  { return team.division === 'East'; });
   -nlCTeams = nlTeams.filter(function(team)  { return team.division === 'Central'; });
   -nlWTeams = nlTeams.filter(function(team)  { return team.division === 'West'; });
