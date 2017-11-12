@@ -4,6 +4,7 @@ block content
   h1= title
   p Showing 2017 season standings.
 
+  // a comparator function used for sorting teams by wins
   -sortTeams = function(teamA, teamB) { return teamB.win - teamA.win; }
 
   -alTeams  = teamData.filter(function(team) { return team.league   === 'AL'; }).sort(sortTeams);
@@ -35,20 +36,31 @@ mixin teamsTable(caption, teams)
     caption= caption
     thead
       tr
+        th
+        th(colspan=3) Overall
+        th(colspan=3) Home
+        th(colspan=3) Away
+      tr
         th Team
-        th(abbr="Wins") W
-        th(abbr="Losses") L
-        th(abbr="Home Wins") Home W
-        th(abbr="Home Losses") Home L
-        th(abbr="Away Wins") Away W
-        th(abbr="Away Losses") Away L
+        th(abbr="Overall Wins") W
+        th(abbr="Overall Losses") L
+        th(abbr="Overall Percentage") Pct
+        th(abbr="Home Wins") W
+        th(abbr="Home Losses") L
+        th(abbr="Home Percentage") Pct
+        th(abbr="Away Wins") W
+        th(abbr="Away Losses") L
+        th(abbr="Away Percentage") Pct
     tbody
     -for(var team in teams)
       tr
         th(scope="row")= teams[team].name
         td= teams[team].win
         td= teams[team].lose
+        td= teams[team].pct
         td= teams[team].winHome
         td= teams[team].loseHome
+        td= teams[team].pctHome
         td= teams[team].winAway
         td= teams[team].loseAway
+        td= teams[team].pctAway

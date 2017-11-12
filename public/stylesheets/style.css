@@ -44,3 +44,5 @@ body {
 	padding: 5px;
 	text-align: right;
 }
+
+.teamsTable thead tr:first-child th { text-align: center; }
