@@ -3,5 +3,12 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+  body(class=bodyClass)
+    nav.nav
+      ul.nav-list
+        li(class=(bodyClass === 'home' ? 'current' : '')).nav-item.home
+          a(href="/").nav-link Home
+        li(class=(bodyClass === 'about' ? 'current' : '')).nav-item.teams
+          a(href="/about").nav-link About
+    main
+      block content

@@ -21,7 +21,7 @@ teamData.forEach(function cb(currentValue, index, array) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express MLB Standings', teamData: teamData });
+  res.render('index', { title: 'Express MLB Standings', teamData: teamData, bodyClass: 'home' });
 });
 
 module.exports = router;
