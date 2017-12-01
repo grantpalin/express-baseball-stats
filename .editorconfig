@@ -12,13 +12,10 @@ insert_final_newline = true
 # Set default charset
 [*.{js,pug}]
 charset = utf-8
-
-# 4 space indentation
-[*.{js,css}]
-indent_style = tab
-indent_size = 4
-
-# 2 space indentation
-[*.pug]
 indent_style = space
 indent_size = 2
+
+# 4 space indentation
+[*.{css}]
+indent_style = tab
+indent_size = 4
