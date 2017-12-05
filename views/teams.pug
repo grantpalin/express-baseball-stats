@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1= title
+
+  // a comparator function used for sorting teams by name
+  -sortTeams = function(teamA, teamB) { return (teamB.name < teamA.name) ? 1 : (teamB.name > teamA.name) ? -1 : 0 }
+
+  // include AL teams only, sorted by name; division filter results will be already sorted
+  -alTeams  = teams.filter(function(team)   { return team.league   === 'AL'; }).sort(sortTeams);
+  -alETeams = alTeams.filter(function(team) { return team.division === 'East'; });
+  -alCTeams = alTeams.filter(function(team) { return team.division === 'Central'; });
+  -alWTeams = alTeams.filter(function(team) { return team.division === 'West'; });
+
+  // include NL teams only, sorted by name; division filter results will be already sorted
+  -nlTeams  = teams.filter(function(team)   { return team.league   === 'NL'; }).sort(sortTeams);
+  -nlETeams = nlTeams.filter(function(team) { return team.division === 'East'; });
+  -nlCTeams = nlTeams.filter(function(team) { return team.division === 'Central'; });
+  -nlWTeams = nlTeams.filter(function(team) { return team.division === 'West'; });
+
+  +leagueTeams("American", {'West': alWTeams, 'Central': alCTeams, 'East': alETeams})
+  +leagueTeams("National", {'West': nlWTeams, 'Central': nlCTeams, 'East': nlETeams})
+
+mixin leagueTeams(league, leagueTeams)
+  section(class=league.toLowerCase()).league
+    div.division
+      h2.league-title #{league} League
+    -for(var division in leagueTeams)
+      div(class=division.toLowerCase()).division
+        -var divisionTeams = leagueTeams[division]
+        h3.division-title= division
+
+        ul.division-teams
+          -for(var team in divisionTeams)
+            li(class=divisionTeams[team].abbrev.toLowerCase()).division-team
+              a(href="/teams/" + divisionTeams[team].abbrev).division-team-link= divisionTeams[team].name
