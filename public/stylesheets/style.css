@@ -88,7 +88,7 @@ main {
 
 @media screen and (min-width: 40em) {
 	.teams .league {
-		align-items: flex-start;
+		align-items: center;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -107,11 +107,6 @@ main {
 }
 
 @media screen and (min-width: 65em) {
-	.teams .league {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-	}
 	.teams .division:first-child {
 		width: 10%;
 	}
@@ -121,7 +116,6 @@ main {
 	}
 	.teams .league-title {
 		margin: 0;
-		text-align: center;
 		text-orientation: sideways;
 		writing-mode: vertical-rl;
 	}
