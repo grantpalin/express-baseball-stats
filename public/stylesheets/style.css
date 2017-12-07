@@ -138,6 +138,158 @@ main {
 	padding: 0.5em;
 	text-decoration: none;
 }
+
+.teams .ari .division-team-link {
+	background-color: #A71930;
+	border-bottom-color: #E3D4AD;
+	color: #FFF;
+}
+.teams .atl .division-team-link {
+	background-color: #CE1141;
+	border-bottom-color: #13274F;
+	color: #FFF;
+}
+.teams .bal .division-team-link {
+	background-color: #DF4601;
+	border-bottom-color: #000000;
+	color: #FFF;
+}
+.teams .bos .division-team-link {
+	background-color: #BD3039;
+	border-bottom-color: #0D2B56;
+	color: #FFF;
+}
+.teams .chc .division-team-link {
+	background-color: #CC3433;
+	border-bottom-color: #0E3386;
+	color: #FFF;
+}
+.teams .chw .division-team-link {
+	background-color: #C4CED4;
+	border-bottom-color: #000;
+	color: #FFF;
+}
+.teams .cin .division-team-link {
+	background-color: #C6011F;
+	border-bottom-color: #000000;
+	color: #FFF;
+}
+.teams .cle .division-team-link {
+	background-color: #E31937;
+	border-bottom-color: #002B5C;
+	color: #FFF;
+}
+.teams .col .division-team-link {
+	background-color: #333366;
+	border-bottom-color: #231F20;
+	color: #C4CED4;
+}
+.teams .det .division-team-link {
+	background-color: #0C2C56;
+	border-bottom-color: #ccc;
+	color: #FFF;
+}
+.teams .hou .division-team-link {
+	background-color: #002D62;
+	border-bottom-color: #EB6E1F;
+	color: #FFF;
+}
+.teams .kc .division-team-link {
+	background-color: #004687;
+	border-bottom-color: #C09A5B;
+	color: #FFF;
+}
+.teams .laa .division-team-link {
+	background-color: #BA0021;
+	border-bottom-color: #003263;
+	color: #FFF;
+}
+.teams .lad .division-team-link {
+	background-color: #EF3E42;
+	border-bottom-color: #005A9C;
+	color: #FFF;
+}
+.teams .mia .division-team-link {
+	background-color: #FF6600;
+	border-bottom-color: #0077C8;
+	color: #FFF;
+}
+.teams .mil .division-team-link {
+	background-color: #0A2351;
+	border-bottom-color: #B6922E;
+	color: #FFF;
+}
+.teams .min .division-team-link {
+	background-color: #002B5C;
+	border-bottom-color: #D31145;
+	color: #FFF;
+}
+.teams .nym .division-team-link {
+	background-color: #FF5910;
+	border-bottom-color: #002D72;
+	color: #FFF;
+}
+.teams .nyy .division-team-link {
+	background-color: #E4002B;
+	border-bottom-color: #003087;
+	color: #FFF;
+}
+.teams .oak .division-team-link {
+	background-color: #003831;
+	border-bottom-color: #EFB21E;
+	color: #FFF;
+}
+.teams .phi .division-team-link {
+	background-color: #284898;
+	border-bottom-color: #E81828;
+	color: #FFF;
+}
+.teams .pit .division-team-link {
+	background-color: #FDB827;
+	border-bottom-color: #000000;
+	color: #FFF;
+}
+.teams .sdp .division-team-link {
+	background-color: #002D62;
+	border-bottom-color: #FEC325;
+	color: #A0AAB2;
+}
+.teams .sfg .division-team-link {
+	background-color: #FD5A1E;
+	border-bottom-color: #8B6F4E;
+	color: #000000;
+}
+.teams .sea .division-team-link {
+	background-color: #0C2C56;
+	border-bottom-color: #005C5C;
+	color: #C4CED4;
+}
+.teams .stl .division-team-link {
+	background-color: #C41E3A;
+	border-bottom-color: #000066;
+	color: #FFF;
+}
+.teams .tb .division-team-link {
+	background-color: #092C5C;
+	border-bottom-color: #8FBCE6;
+	color: #FFF;
+}
+.teams .tex .division-team-link {
+	background-color: #C0111F;
+	border-bottom-color: #003278;
+	color: #FFF;
+}
+.teams .tor .division-team-link {
+	background-color: #134A8E;
+	border-bottom-color: #1D2D5C;
+	color: #FFF;
+}
+.teams .wsh .division-team-link {
+	background-color: #AB0003;
+	border-bottom-color: #11225B;
+	color: #FFF;
+}
+
 .teams .division-team-link:hover {
 	background-color: #000;
 	color: #FFF;
