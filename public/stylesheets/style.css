@@ -120,3 +120,25 @@ main {
 		writing-mode: vertical-rl;
 	}
 }
+
+.teams .division-teams {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.teams .division-team + .division-team {
+	margin-top: 0.85em;
+}
+.teams .division-team-link {
+	background-color: #CCC;
+	border-bottom: 4px solid black;
+	color: #000;
+	display: block;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+}
+.teams .division-team-link:hover {
+	background-color: #000;
+	color: #FFF;
+}
