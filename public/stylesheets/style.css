@@ -77,3 +77,52 @@ main {
 }
 
 .teamsTable thead tr:first-child th { text-align: center; }
+
+.teams .league + .league { margin-top: 2em; }
+
+.teams .division-title {
+	border-bottom: 1px solid #ccc;
+}
+
+.teams .league-title, .teams .division-title { font-size: 1.4em; }
+
+@media screen and (min-width: 40em) {
+	.teams .league {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.teams .division {
+		box-sizing: border-box;
+		padding: 10px;
+		width: 50%;
+	}
+
+	.teams .league-title, .teams .division-title {
+		margin-bottom: 0.5em;
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 65em) {
+	.teams .league {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.teams .division:first-child {
+		width: 10%;
+	}
+	.teams .division:not(:first-child) {
+		border-left: 1px solid #ccc;
+		width: 30%;
+	}
+	.teams .league-title {
+		margin: 0;
+		text-align: center;
+		text-orientation: sideways;
+		writing-mode: vertical-rl;
+	}
+}
